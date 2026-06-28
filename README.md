@@ -1,6 +1,6 @@
 # Automated Testing Project - Frenet Registration
 
-This project contains an end-to-end (E2E) automated testing suite for the registration flow of the [Frenet](https://cadastro.frenet.com.br/) platform. It was built using **Playwright** with **TypeScript**.
+This project contains an end-to-end (E2E) automated testing suite for the registration flow of the [Frenet](https://cadastro.frenet.com.br/) platform. It was built using **Playwright** with **TypeScript**. It covers multiple browsers and both desktop and mobile viewports.
 
 ---
 
