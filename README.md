@@ -41,6 +41,8 @@ The codebase is organized as follows to ensure clean code, reusability, and main
 
 ### Prerequisites
 - **Node.js** (version 20 or higher) installed.
+- If you use [nvm](https://github.com/nvm-sh/nvm), run `nvm use` in the project root to automatically switch to the correct Node.js version.
+
 
 ### 1. Install dependencies
 Run the command below in the project root directory to install the required packages:
