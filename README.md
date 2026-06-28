@@ -40,7 +40,7 @@ The codebase is organized as follows to ensure clean code, reusability, and main
 ## 🚀 How to Run the Project
 
 ### Prerequisites
-- **Node.js** (version 18 or higher) installed.
+- **Node.js** (version 20 or higher) installed.
 
 ### 1. Install dependencies
 Run the command below in the project root directory to install the required packages:
