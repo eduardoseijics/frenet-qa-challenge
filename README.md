@@ -68,6 +68,21 @@ To launch Playwright's interactive visual runner:
 npx playwright test --ui
 ```
 
+### 5. Run tests by tags (using Grep)
+You can filter and run specific tests using tags defined in the test titles. For a full list of available tags, refer to the [Contributing & Best Practices Guide](./CONTRIBUTING.md).
+
+- Run only validation tests:
+```bash
+npx playwright test --grep @validation
+```
+- Run only password-related tests:
+```bash
+npx playwright test --grep @password
+```
+- Run only the happy path tests:
+```bash
+npx playwright test --grep @happyPath
+```
 ---
 
 ## 📝 Important QA Observations

@@ -9,7 +9,7 @@ test.describe('Registration Field Validations - Frenet', () => {
     await registerPage.goto();
   });
 
-  test('Should keep submit button disabled and display error for invalid email', async ({ registerPage }) => {
+  test('Should keep submit button disabled and display error for invalid email @validation @email', async ({ registerPage }) => {
     await expect(registerPage.submitButton).toBeDisabled();
 
     await registerPage.fillForm({
@@ -22,7 +22,7 @@ test.describe('Registration Field Validations - Frenet', () => {
     await expect(registerPage.submitButton).toBeDisabled();
   });
 
-  test('Should display error if passwords do not match', async ({ registerPage }) => {
+  test('Should display error if passwords do not match @validation @password', async ({ registerPage }) => {
     await registerPage.fillName(userData.name);
     await registerPage.fillEmail(userData.email);
     await registerPage.fillCellphone(userData.cellphone);
@@ -34,7 +34,7 @@ test.describe('Registration Field Validations - Frenet', () => {
     await expect(registerPage.submitButton).toBeDisabled();
   });
 
-  test('Should display error for incomplete name', async ({ registerPage }) => {
+  test('Should display error for incomplete name @validation @name', async ({ registerPage }) => {
     await registerPage.fillName('John');
     await registerPage.fillEmail(userData.email);
     await registerPage.fillCellphone(userData.cellphone);
@@ -46,7 +46,7 @@ test.describe('Registration Field Validations - Frenet', () => {
     await expect(registerPage.submitButton).toBeDisabled();
   });
 
-  test('Should display error for empty password', async ({ registerPage }) => {
+  test('Should display error for empty password @validation @password', async ({ registerPage }) => {
     await registerPage.fillName(userData.name);
     await registerPage.fillEmail(userData.email);
     await registerPage.fillCellphone(userData.cellphone);
@@ -61,7 +61,7 @@ test.describe('Registration Field Validations - Frenet', () => {
     await expect(registerPage.submitButton).toBeDisabled();
   });
 
-  test('Should display error for empty confirm password', async ({ registerPage }) => {
+  test('Should display error for empty confirm password @validation @password', async ({ registerPage }) => {
     await registerPage.fillName(userData.name);
     await registerPage.fillEmail(userData.email);
     await registerPage.fillCellphone(userData.cellphone);

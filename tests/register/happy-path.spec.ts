@@ -9,7 +9,7 @@ test.describe('New User Registration Flow - Frenet', () => {
     await registerPage.goto();
   });
 
-  test('Should successfully register a new user', async ({ registerPage, page }) => {
+  test('Should successfully register a new user @happyPath @smoke', async ({ registerPage, page }) => {
     test.fixme(true, 'reCAPTCHA cannot be resolved automatically in a headless/automated environment.');
 
     await registerPage.fillForm(userData);

@@ -87,3 +87,29 @@ Locators should follow this priority order:
   - Removed step-by-step explanatory comments (e.g. `// 1. Click button`).
   - Kept only essential context-specific notes (such as the reCAPTCHA bypass skip warning).
 - **Benefit**: Avoids code clutter and reduces maintenance overhead when code changes.
+
+---
+
+## 10. Test Tagging
+
+All test cases should include appropriate `@tags` at the end of their title strings to enable selective test execution using Playwright's `--grep` command option.
+
+### Guidelines
+- Always use camelCase for tags.
+- Combine a category tag (e.g., `@happyPath`, `@validation`) with domain or field-specific tags (e.g., `@email`, `@password`, `@smoke`).
+
+### Standard Tags
+- `@happyPath`: Denotes the primary successful workflow.
+- `@validation`: Denotes validation checks, error boundaries, or invalid inputs.
+- `@smoke`: Denotes highly critical scenarios used to quickly verify system health.
+- `@email`: Identifies test scenarios validating the email field.
+- `@password`: Identifies test scenarios validating the password and confirm password fields.
+- `@name`: Identifies test scenarios validating the name field.
+- `@phone`: Identifies test scenarios validating the cellphone field.
+
+### Example
+```typescript
+test('Should display error for empty password @validation @password', async ({ registerPage }) => {
+  // ...
+});
+```
